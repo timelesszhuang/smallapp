@@ -1,5 +1,5 @@
 <?php
-namespace app\admin\controller;
+namespace app\test\controller;
 
 use think\Request;
 
