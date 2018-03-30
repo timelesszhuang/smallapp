@@ -10,6 +10,7 @@ class Index
         $request = Request::instance();
         print_r($request->post());
         print_r($_SERVER['HTTP_USER_AGENT']);
+        print_r($_SERVER['HTTP_HOST']);
 
     }
 }
