@@ -1,16 +1,15 @@
 <?php
 namespace app\test\controller;
 
+use think\Controller;
 use think\Request;
 
-class Index
+
+class Index extends Controller
 {
     public function index()
     {
-        $request = Request::instance();
-        print_r($request->post());
-        print_r($_SERVER['HTTP_USER_AGENT']);
-        print_r($_SERVER['HTTP_HOST']);
+      return  $this->fetch('show');
 
     }
 }
